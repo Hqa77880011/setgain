@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "setgain"
+version = "0.1.0"
+description = "SetGain implementation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "torch>=2.3,<3", "matplotlib>=3.8,<4", "scikit-learn>=1.4,<2", "nibabel>=5.2,<6"]
+
+[project.scripts]
+setgain = "setgain.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Repository = "https://github.com/Hqa77880011/setgain"
+
+[project.optional-dependencies]
+lidc = ["pylidc==0.2.3", "pydicom>=2.4,<3", "SQLAlchemy>=1.4,<2"]

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this software when using the implementation."
+type: software
+title: "SetGain: Learning the Marginal Value of Additional Annotations for Ambiguous Medical Segmentation implementation"
+version: 0.1.0
+authors:
+  - family-names: Hu
+    given-names: Qinao
+license: MIT
+repository-code: "https://github.com/Hqa77880011/setgain"
